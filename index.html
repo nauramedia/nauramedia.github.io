@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NauraMEDIA | Creative Studio</title>
+    
+    <meta name="title" content="NauraMEDIA — Creative Studio & Digital Agency Semarang">
+    <meta name="description" content="Agency kreatif Semarang terpercaya. Melayani jasa pembuatan website SEO, desain logo brand, kelola feed Instagram UMKM, dan pembuatan konten viral Reels & TikTok.">
+    <meta name="keywords" content="jasa pembuatan website semarang, agency kreatif semarang, jasa desain logo semarang, kelola feed instagram semarang, jasa konten tiktok semarang, digital agency semarang, nauramedia, konten pembuat umkm jawa tengah">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    <meta name="author" content="NauraMEDIA">
+
+    <meta name="geo.region" content="ID-JT">
+    <meta name="geo.placename" content="Semarang">
+    <meta name="geo.position" content="-6.966667;110.416664">
+    <meta name="ICBM" content="-6.966667, 110.416664">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nauramedia.com/">
+    <meta property="og:title" content="NauraMEDIA — Creative Studio & Digital Agency Semarang">
+    <meta property="og:description" content="Solusi branding & digital marketing di Semarang: Pembuatan Website, Desain Logo, Feed UMKM, serta Konten Reels & TikTok.">
+    <meta property="og:image" content="https://nauramedia.com/og-image.jpg">
+    <meta property="og:locale" content="id_ID">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nauramedia.com/">
+    <meta property="twitter:title" content="NauraMEDIA — Creative Studio & Digital Agency Semarang">
+    <meta property="twitter:description" content="Solusi branding & digital marketing di Semarang: Pembuatan Website, Desain Logo, Feed UMKM, serta Konten Reels & TikTok.">
+    <meta property="twitter:image" content="https://nauramedia.com/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandLime: '#AFE607',
+                        brandBlack: '#000000',
+                        brandDarkCard: '#0A0A0D',
+                        brandDarkBorder: '#1A1A22',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['Syne', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(12, 12, 15, 0.65);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(175, 230, 7, 0.4);
+            box-shadow: 0 0 25px rgba(175, 230, 7, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 15px rgba(175, 230, 7, 0.4);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 25s linear infinite;
+        }
+
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        .aspect-16-9 {
+            aspect-ratio: 16 / 9;
+        }
+
+        .aspect-1-1 {
+            aspect-ratio: 1 / 1;
+        }
+
+        .aspect-9-16 {
+            aspect-ratio: 9 / 16;
+        }
+
+        .custom-nav-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 9999px;
+            background: rgba(20, 20, 25, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .custom-nav-btn:hover {
+            background: #AFE607;
+            color: #000000;
+            border-color: #AFE607;
+            box-shadow: 0 0 15px rgba(175, 230, 7, 0.5);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .video-card video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+    <header class="fixed top-0 left-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#beranda" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-brandLime flex items-center justify-center shadow-[0_0_15px_rgba(175,230,7,0.4)] group-hover:scale-105 transition-transform overflow-hidden">
+                    <img src="img/logo.png" alt="NauraMEDIA Logo" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-xl tracking-tight text-white">Naura<span class="text-brandLime">MEDIA</span></span>
+                    <span class="text-[10px] tracking-widest uppercase text-gray-400 -mt-1 font-semibold">Creative Studio</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#beranda" class="hover:text-brandLime transition-colors">Beranda</a>
+                <a href="#layanan" class="hover:text-brandLime transition-colors">Layanan</a>
+                <a href="#portofolio" class="hover:text-brandLime transition-colors">Portofolio</a>
+                <a href="#keunggulan" class="hover:text-brandLime transition-colors">Mengapa Kami</a>
+                <a href="#kontak" class="hover:text-brandLime transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/6285760692726?text=Halo%20NauraMEDIA,%20saya%20ingin%20konsultasi%20mengenai%20project%20kreatif." 
+                   target="_blank" 
+                   class="px-5 py-2.5 rounded-full bg-brandLime text-black font-semibold text-sm hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Konsultasi Gratis</span>
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDarkCard border-b border-gray-800 px-4 pt-3 pb-6 flex flex-col gap-4">
+            <a href="#beranda" class="text-gray-300 hover:text-brandLime py-1 text-base">Beranda</a>
+            <a href="#layanan" class="text-gray-300 hover:text-brandLime py-1 text-base">Layanan</a>
+            <a href="#portofolio" class="text-gray-300 hover:text-brandLime py-1 text-base">Portofolio</a>
+            <a href="#keunggulan" class="text-gray-300 hover:text-brandLime py-1 text-base">Mengapa Kami</a>
+            <a href="#kontak" class="text-gray-300 hover:text-brandLime py-1 text-base">Kontak</a>
+            <a href="https://wa.me/6285760692726?text=Halo%20NauraMEDIA,%20saya%20ingin%20konsultasi%20mengenai%20project." 
+               target="_blank" 
+               class="w-full text-center py-3 rounded-full bg-brandLime text-black font-semibold flex items-center justify-center gap-2">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>Konsultasi WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="beranda" class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brandLime/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="text-center max-w-4xl mx-auto relative z-10">
+
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brandLime/30 bg-brandLime/10 text-brandLime text-xs font-semibold uppercase tracking-wider mb-8 shadow-[0_0_15px_rgba(175,230,7,0.2)]">
+                <span class="w-2 h-2 rounded-full bg-brandLime animate-ping"></span>
+                Digital Agency & Creative Studio Specialist
+            </div>
+
+            <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+                Tingkatkan Class Brand & <span class="text-brandLime text-glow">Omset Bisnis</span> Secara Digital
+            </h1>
+
+            <p class="text-gray-400 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                NauraMEDIA membantu UMKM & Company tumbuh pesat melalui <strong>Jasa Pembuatan Website SEO</strong>, <strong>Desain Logo Brand Identity</strong>, <strong>Management Feed Instagram</strong>, serta <strong>Konten Reels & TikTok Viral</strong>.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portofolio" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brandLime text-black font-bold text-base hover:bg-white hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                    <span>Lihat Portofolio Kami</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#kontak" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gray-700 hover:border-brandLime bg-brandDarkCard/80 text-white font-semibold text-base hover:text-brandLime transition-all flex items-center justify-center gap-3">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Mulai Project Baru</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-gray-800/80 text-left">
+                <div class="p-4 rounded-2xl bg-brandDarkCard/40 border border-gray-800/50">
+                    <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brandLime mb-1">150+</div>
+                    <div class="text-xs sm:text-sm text-gray-400">Project Selesai</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-brandDarkCard/40 border border-gray-800/50">
+                    <div class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-1">98%</div>
+                    <div class="text-xs sm:text-sm text-gray-400">Client Puas</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-brandDarkCard/40 border border-gray-800/50">
+                    <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brandLime mb-1">3.5x</div>
+                    <div class="text-xs sm:text-sm text-gray-400">Rata-rata ROI Growth</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-brandDarkCard/40 border border-gray-800/50">
+                    <div class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-1">24/7</div>
+                    <div class="text-xs sm:text-sm text-gray-400">Support Konsultasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 border-y border-gray-900 bg-black/90 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 mb-4 text-center">
+            <span class="text-xs uppercase tracking-widest text-gray-500 font-semibold">Telah Dipercaya Oleh 100+ UMKM & Perusahaan di Indonesia</span>
+        </div>
+        
+        <div class="relative w-full overflow-hidden">
+            <div class="animate-marquee items-center gap-12 sm:gap-16">
+
+        <div class="flex items-center gap-12 sm:gap-16 shrink-0">
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/taka.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/inara.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/keraton.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/koptea.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/brother.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/bengkel.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/hai.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/djalan.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/berlian.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/aureva.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/mads.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/deal.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/jamu.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/propertiku.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/jabrik.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/tdi.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/twi.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/tumbuh.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+        </div>
+
+        <div class="flex items-center gap-12 sm:gap-16 shrink-0">
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/taka.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/inara.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/keraton.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/koptea.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/brother.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/bengkel.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/hai.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/djalan.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/berlian.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/aureva.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/mads.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/deal.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/jamu.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/propertiku.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/jabrik.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/tdi.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/twi.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <img src="img/tumbuh.png" class="h-12 sm:h-16 w-auto object-contain">
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-brandLime text-sm font-semibold tracking-widest uppercase mb-3">Layanan Unggulan Kami</h2>
+            <p class="font-heading text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                Solusi Kreatif Lengkap Untuk Akselerasi Bisnis Anda
+            </p>
+            <p class="text-gray-400 mt-4 text-base">
+                Kami merancang strategi digital komprehensif agar brand Anda lebih menonjol, dipercaya, dan menghasilkan penjualan tinggi.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brandLime/10 border border-brandLime/30 flex items-center justify-center text-brandLime text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandLime group-hover:text-black transition-all">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Pembuatan Website SEO</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Website responsif, loading super cepat, ramah mesin pencari Google (SEO Optimized), serta berkonversi tinggi untuk Company Profile atau E-commerce.
+                    </p>
+                </div>
+                <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-gray-800">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> UI/UX Design Ultra Modern</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Gratis Domain & Hosting</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Integrasi Tombol WhatsApp Direct</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brandLime/10 border border-brandLime/30 flex items-center justify-center text-brandLime text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandLime group-hover:text-black transition-all">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Logo & Brand Identity</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Desain logo eksklusif dengan filosofi mendalam, lengkap dengan guideline warna, tipografi, dan aset visual identitas brand profesional.
+                    </p>
+                </div>
+                <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-gray-800">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Konsep Filosofis Unique</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> File Vector Master (AI, SVG, PNG)</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Book Brand Guideline</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brandLime/10 border border-brandLime/30 flex items-center justify-center text-brandLime text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandLime group-hover:text-black transition-all">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Design Feed UMKM</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Pengelolaan visual Instagram feed yang rapi, bernilai estetis tinggi, disertai copywriting edukatif & persuasif penarik konsumen.
+                    </p>
+                </div>
+                <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-gray-800">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Grid Layout Aesthetic</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Copywriting Selling & Hashtag</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Content Calendar Bulanan</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-brandLime/10 border border-brandLime/30 flex items-center justify-center text-brandLime text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandLime group-hover:text-black transition-all">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Reels & TikTok Viral</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Pembuatan video pendek berkonsep hook menarik, editing tren kekinian, musik komersial viral untuk mendongkrak reach & omset.
+                    </p>
+                </div>
+                <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-gray-800">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Script & Concept Hook</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Pro Editing & Subtitle Clean</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-brandLime"></i> Riset Audio Trend FYP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio" class="py-24 bg-black/80 border-t border-gray-900 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-brandLime text-sm font-semibold tracking-widest uppercase mb-3">Portofolio Karya Terbaik</h2>
+            <p class="font-heading text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                Bukti Nyata Hasil Kerja NauraMEDIA
+            </p>
+            <p class="text-gray-400 mt-4 text-base">
+                Jelajahi karya yang telah kami selesaikan untuk klien UMKM maupun perusahaan di berbagai industri.
+            </p>
+        </div>
+
+        <div class="mb-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gray-800 pb-4">
+                <div>
+                    <span class="text-xs font-semibold text-brandLime uppercase tracking-wider">Kategori 01</span>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white mt-1">Pengembangan Website</h3>
+                    <p class="text-gray-400 text-sm mt-1">Kunjungi Website dibawah ini untuk melihat demo dan hasil kami.</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button class="custom-nav-btn swiper-web-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <button class="custom-nav-btn swiper-web-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="swiper swiper-website">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/propertiku.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Listing Property</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Propertiku Semarang</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Website listing property dengan berbagai fitur untuk memudahkan pengguna dalam mencari property.</p>
+                                </div>
+                                <a href="https://propertikusemarang.com" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/bengkel.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Manufaktur</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Bengkel Gerobak Darmawan</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk pembuatan gerobak UMKM.</p>
+                                </div>
+                                <a href="https://bengkelgerobakdarmawan-eng.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/tdi.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Company Profile</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Teh Desa Indonesia</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://tehdesaindonesia.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/twi.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Company Profile</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Teh Wasgitel Indonesia</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://tehwasgitelidn.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/koptea.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Company Profile</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Koptea Indonesia</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://koptea.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/brother.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Company Profile</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Brother Car Wash & Detailing</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://brothercarwash.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/jabrik.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Company Profile</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">Teh Jabrik</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://tehjabrik.github.io" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+                            <div class="aspect-16-9 relative overflow-hidden group">
+                                <img src="img/web/tumbuh.png" alt="Company Profile Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+                                <span class="absolute top-3 left-3 bg-brandLime text-black text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">Listing Property</span>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h4 class="font-heading font-bold text-lg text-white mb-2">TumbuhLand</h4>
+                                    <p class="text-gray-400 text-xs mb-4">Situs profil perusahaan untuk Company Profile.</p>
+                                </div>
+                                <a href="https://tumbuhland.com" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-brandLime/10 border border-brandLime/40 text-brandLime hover:bg-brandLime hover:text-black font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                                    <span>Kunjungi Website Langsung</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gray-800 pb-4">
+                <div>
+                    <span class="text-xs font-semibold text-brandLime uppercase tracking-wider">Kategori 02</span>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white mt-1">Logo & Brand Identity</h3>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button class="custom-nav-btn swiper-logo-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <button class="custom-nav-btn swiper-logo-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="swiper swiper-logo">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden group">
+                            <div class="aspect-1-1 relative overflow-hidden">
+                                <img src="img/logo/djalan.png" alt="AURA Glow Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Djalan Kopi</h4>
+                                    <span class="text-xs text-brandLime font-semibold mt-0.5">Food & Baverage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden group">
+                            <div class="aspect-1-1 relative overflow-hidden">
+                                <img src="img/logo/aureva.png" alt="AURA Glow Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Aureva Scent</h4>
+                                    <span class="text-xs text-brandLime font-semibold mt-0.5">Skincare & Beauty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden group">
+                            <div class="aspect-1-1 relative overflow-hidden">
+                                <img src="img/logo/mads.png" alt="AURA Glow Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Mads Coffee</h4>
+                                    <span class="text-xs text-brandLime font-semibold mt-0.5">Food & Baverage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden group">
+                            <div class="aspect-1-1 relative overflow-hidden">
+                                <img src="img/logo/njamu.png" alt="AURA Glow Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Njamu Tamoe</h4>
+                                    <span class="text-xs text-brandLime font-semibold mt-0.5">Food & Baverage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-2xl overflow-hidden group">
+                            <div class="aspect-1-1 relative overflow-hidden">
+                                <img src="img/logo/propertiku.png" alt="AURA Glow Logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Propertiku Semarang</h4>
+                                    <span class="text-xs text-brandLime font-semibold mt-0.5">Listing Property</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gray-800 pb-4">
+                <div>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white mt-1">Handle Design Feed UMKM</h3>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button class="custom-nav-btn swiper-feed-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <button class="custom-nav-btn swiper-feed-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="swiper swiper-feed max-w-xl mx-auto">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-4">
+                            <div class="aspect-1-1 relative rounded-2xl overflow-hidden group">
+                                <img src="img/feed/twi.png" alt="Feed Design Instagram UMKM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <span class="px-3 py-1 bg-brandLime text-black font-bold text-[10px] uppercase rounded-full mb-2 inline-block">Instagram Feed #01</span>
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Teh Wasgitel Indonesia | Kemitraan</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-4">
+                            <div class="aspect-1-1 relative rounded-2xl overflow-hidden group">
+                                <img src="img/feed/tdi.png" alt="Feed Instagram Resto F&B" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <span class="px-3 py-1 bg-brandLime text-black font-bold text-[10px] uppercase rounded-full mb-2 inline-block">Instagram Feed #02</span>
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Teh Desa Indonesia | Kemitraan</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-4">
+                            <div class="aspect-1-1 relative rounded-2xl overflow-hidden group">
+                                <img src="img/feed/jabrik.png" alt="Feed Instagram Fashion Brand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <span class="px-3 py-1 bg-brandLime text-black font-bold text-[10px] uppercase rounded-full mb-2 inline-block">Instagram Feed #03</span>
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Teh Jabrik | Kemitraan</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-4">
+                            <div class="aspect-1-1 relative rounded-2xl overflow-hidden group">
+                                <img src="img/feed/propertiku.png" alt="Feed Instagram Fashion Brand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <span class="px-3 py-1 bg-brandLime text-black font-bold text-[10px] uppercase rounded-full mb-2 inline-block">Instagram Feed #04</span>
+                                    <h4 class="font-heading font-extrabold text-xl text-white">Propertiku Semarang | Listing Property</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gray-800 pb-4">
+                <div>
+                    <span class="text-xs font-semibold text-brandLime uppercase tracking-wider">Kategori 04</span>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white mt-1">Reels Instagram & Video TikTok</h3>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button class="custom-nav-btn swiper-reels-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <button class="custom-nav-btn swiper-reels-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="swiper swiper-reels">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <!-- Pakai ID Video 7666703644993129749 -->
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7666703644993129749" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Teh Jabrik - Info Kemitraan</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-eye text-brandLime mr-1"></i> @teh_jabrik</span>
+                                    <span class="text-brandLime font-semibold">FYP Viral</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7548723188646087957" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Langkah Join Kemitraan</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-video text-brandLime mr-1"></i> @tehwasgitel_indonesia</span>
+                                    <span class="text-brandLime font-semibold">Teh Wasgitel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7623654130233462023" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Peluang Usaha Minuman</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-video text-brandLime mr-1"></i> @tehdesa_indonesia</span>
+                                    <span class="text-brandLime font-semibold">Teh Desa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7401018943491771653" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Custom Booth Container</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-video text-brandLime mr-1"></i> @bengkel_gerobaksmg</span>
+                                    <span class="text-brandLime font-semibold">Gerobak SMG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7597507445019118866" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Cuci & Detailing Mobil</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-video text-brandLime mr-1"></i> @brothercarwash...</span>
+                                    <span class="text-brandLime font-semibold">Carwash</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card rounded-3xl overflow-hidden p-3 video-card">
+                            <div class="aspect-9-16 relative rounded-2xl overflow-hidden bg-gray-900">
+                                <iframe 
+                                    src="https://www.tiktok.com/player/v1/7664230225714236690" 
+                                    class="w-full h-full border-0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-brandLime font-bold flex items-center gap-1 z-10 pointer-events-none">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <h4 class="font-heading font-bold text-base text-white">Grand Opening Wonodri</h4>
+                                <div class="flex items-center justify-between text-xs text-gray-400 mt-2">
+                                    <span><i class="fas fa-video text-brandLime mr-1"></i> @teh_jabrik</span>
+                                    <span class="text-brandLime font-semibold">Teh Jabrik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-brandLime text-sm font-semibold tracking-widest uppercase mb-3 inline-block">Mengapa Memilih NauraMEDIA</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-6">
+                    Partner Strategis Pertumbuhan Digital Bisnis Anda
+                </h2>
+                <p class="text-gray-400 text-base leading-relaxed mb-8">
+                    Kami tidak hanya sekadar membuat desain atau website, tapi kami merancang aset digital yang memiliki strategi pemasaran mendalam, siap bersaing di mesin pencari Google, dan memikat perhatian target audiens Anda.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-brandLime/20 text-brandLime flex items-center justify-center shrink-0 font-bold">
+                            01
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-white text-lg">SEO & Conversion Focused</h3>
+                            <p class="text-gray-400 text-sm mt-1">Setiap website dirancang dengan standar kode SEO Google terbaru agar mudah ditemukan pembeli potensial.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-brandLime/20 text-brandLime flex items-center justify-center shrink-0 font-bold">
+                            02
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-white text-lg">Desain Custom & Exclusive</h3>
+                            <p class="text-gray-400 text-sm mt-1">Tidak menggunakan template murahan. Seluruh desain logo, feed, dan website dibuat custom unik untuk brand Anda.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-brandLime/20 text-brandLime flex items-center justify-center shrink-0 font-bold">
+                            03
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-white text-lg">Pengerjaan Cepat & Garansi Revisi</h3>
+                            <p class="text-gray-400 text-sm mt-1">Timeline kerja tepat waktu disepakati bersama, disertai garansi revisi kepuasan hasil akhir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gray-800 relative">
+                <div class="absolute -top-6 -right-6 w-28 h-28 bg-brandLime/20 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="text-center mb-8">
+                    <div class="w-20 h-20 rounded-3xl bg-brandLime text-black flex items-center justify-center text-3xl font-extrabold mx-auto mb-4 shadow-[0_0_30px_rgba(175,230,7,0.4)]">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white">Siap Bawa Bisnis Anda ke Level Berikutnya?</h3>
+                    <p class="text-gray-400 text-sm mt-2">Dapatkan penawaran paket bundling terhemat khusus hari ini!</p>
+                </div>
+
+                <div class="bg-black/80 rounded-2xl p-6 border border-gray-800 space-y-4 mb-8">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-300"><i class="fas fa-check text-brandLime mr-2"></i> Website SEO Responsive</span>
+                        <span class="text-brandLime font-bold">Included</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-300"><i class="fas fa-check text-brandLime mr-2"></i> Master Logo Guidelines</span>
+                        <span class="text-brandLime font-bold">Included</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-300"><i class="fas fa-check text-brandLime mr-2"></i> 1 Bulan Management Feed</span>
+                        <span class="text-brandLime font-bold">Included</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-300"><i class="fas fa-check text-brandLime mr-2"></i> 5 Video Reels/TikTok Viral</span>
+                        <span class="text-brandLime font-bold">Included</span>
+                    </div>
+                </div>
+
+                <a href="#kontak" class="w-full py-4 rounded-full bg-brandLime text-black font-extrabold text-center block hover:bg-white transition-all shadow-[0_0_20px_rgba(175,230,7,0.3)]">
+                    Klaim Konsultasi & Diskusi Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="kontak" class="py-24 bg-black border-t border-gray-900 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-brandLime text-sm font-semibold tracking-widest uppercase mb-3 block">Hubungi Kami</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white">Mulai Diskusi Project Anda</h2>
+                <p class="text-gray-400 text-base mt-3">Isi form di bawah ini dan pesan akan langsung terhubung secara otomatis ke WhatsApp resmi NauraMEDIA.</p>
+            </div>
+
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gray-800">
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="form-name" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Nama Lengkap / Brand *</label>
+                            <input type="text" id="form-name" required placeholder="Contoh: Budi Santoso (Kopi Senja)" 
+                                   class="w-full px-5 py-4 rounded-xl bg-black/80 border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brandLime focus:ring-1 focus:ring-brandLime transition-all">
+                        </div>
+                        <div>
+                            <label for="form-phone" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Nomor WhatsApp *</label>
+                            <input type="tel" id="form-phone" required placeholder="Contoh: 081234567890" 
+                                   class="w-full px-5 py-4 rounded-xl bg-black/80 border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brandLime focus:ring-1 focus:ring-brandLime transition-all">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="form-service" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Jenis Jasa Yang Dibutuhkan *</label>
+                        <select id="form-service" required class="w-full px-5 py-4 rounded-xl bg-black/80 border border-gray-800 text-white focus:outline-none focus:border-brandLime focus:ring-1 focus:ring-brandLime transition-all">
+                            <option value="Pembuatan Website SEO">Pembuatan Website SEO</option>
+                            <option value="Pembuatan Logo & Brand Identity">Pembuatan Logo & Brand Identity</option>
+                            <option value="Handle Design Feed UMKM / Company">Handle Design Feed UMKM / Company</option>
+                            <option value="Handle Konten Reels & TikTok Viral">Handle Konten Reels & TikTok Viral</option>
+                            <option value="Paket Complete Branding (All-in-One)">Paket Complete Branding (All-in-One)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="form-message" class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Pesan / Brief Singkat Project *</label>
+                        <textarea id="form-message" rows="4" required placeholder="Jelaskan kebutuhan bisnis Anda, estimasi budget, atau pertanyaan lainnya..." 
+                                  class="w-full px-5 py-4 rounded-xl bg-black/80 border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brandLime focus:ring-1 focus:ring-brandLime transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-brandLime text-black font-extrabold text-base hover:bg-white hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] transition-all flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>Kirim Pesan Ke WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-900 bg-black text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brandLime flex items-center justify-center font-heading font-bold text-black text-base">
+                   <img src="img/logo.png" alt="NauraMEDIA Logo" class="w-full h-full object-cover">
+                </div>
+                <span class="font-heading font-bold text-white text-lg">Naura<span class="text-brandLime">MEDIA</span></span>
+            </div>
+
+            <p class="text-xs text-gray-500 text-center">
+                &copy; NauraMEDIA Creative Studio. All rights reserved.
+            </p>
+
+            <div class="flex items-center gap-4 text-lg">
+                <a href="https://wa.me/6285760692726" target="_blank" class="hover:text-brandLime transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/naura.media/" class="hover:text-brandLime transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-brandLime transition-colors" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-brandLime transition-colors" aria-label="Globe"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        function initSwiperSliders() {
+            if (typeof Swiper === 'undefined') {
+                setTimeout(initSwiperSliders, 100);
+                return;
+            }
+            new Swiper('.swiper-website', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-web-next',
+                    prevEl: '.swiper-web-prev',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
+            new Swiper('.swiper-logo', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-logo-next',
+                    prevEl: '.swiper-logo-prev',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
+            new Swiper('.swiper-feed', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: '.swiper-feed-next',
+                    prevEl: '.swiper-feed-prev',
+                }
+            });
+            new Swiper('.swiper-reels', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-reels-next',
+                    prevEl: '.swiper-reels-prev',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', initSwiperSliders);
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const service = document.getElementById('form-service').value;
+            const message = document.getElementById('form-message').value.trim();
+
+            const targetNumber = '6285760692726';
+
+            const waMessage = `Halo NauraMEDIA Creative Studio! 👋\n\nSaya tertarik untuk berkonsultasi mengenai project baru:\n\n👤 *Nama / Brand:* ${name}\n📱 *No. WhatsApp:* ${phone}\n🎯 *Jenis Jasa:* ${service}\n📝 *Brief Pesan:* ${message}\n\nMohon informasi estimasi pengerjaan dan penawaran terbaiknya. Terima kasih!`;
+
+            const encodedURL = `https://wa.me/${targetNumber}?text=${encodeURIComponent(waMessage)}`;
+
+            window.open(encodedURL, '_blank');
+        }
+    </script>
+</body>
+</html>
